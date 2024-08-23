@@ -112,4 +112,38 @@ return [
 
     'password_timeout' => 10800,
 
+    'guards' => [
+    'web' => [
+        'driver' => 'session',
+        'provider' => 'users',
+    ],
+
+    'motorista' => [
+        'driver' => 'session',
+        'provider' => 'motoristas',
+    ],
+
+    'passageiro' => [
+        'driver' => 'session',
+        'provider' => 'passageiros',
+    ],
+],
+
+'providers' => [
+    'users' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\User::class,
+    ],
+
+    'motoristas' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Motorista::class,
+    ],
+
+    'passageiros' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Passageiro::class,
+    ],
+],
+
 ];
