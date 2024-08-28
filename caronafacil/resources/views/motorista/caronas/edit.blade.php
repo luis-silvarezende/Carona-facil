@@ -24,11 +24,11 @@
             <input type="number" step="0.01" name="valor" id="valor" class="form-control" value="{{ $carona->valor }}">
         </div>
         <div class="form-group">
-            <label for="veiculo">Destino</label>
+            <label for="veiculo">Veiculo</label>
             <input type="text" name="veiculo" id="veiculo" class="form-control" value="{{ $carona->veiculo }}" required>
         </div>
         <div class="form-group">
-            <label for="placa">Destino</label>
+            <label for="placa">Placa</label>
             <input type="text" name="placa" id="placa" class="form-control" value="{{ $carona->placa }}" required>
         </div>
         <button type="submit" class="btn btn-primary">Atualizar Carona</button>
